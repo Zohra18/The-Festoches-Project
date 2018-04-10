@@ -1,4 +1,5 @@
 
+
 dy {
 	background-color: ##636e72;
 }
@@ -58,4 +59,44 @@ dy {
 
 
 
+
+=======
+/*SLIDER*/
+.mySlides {
+    display:none;
+    margin: 100px 0 0 200px;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+  }
+
+.im {
+    position: absolute;
+    margin-top: -700px;
+    margin-left: 500px;
+}
+
+span {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 20px 0;
+    font-size: 45px;
+}
+
+.text {
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    text-align: center;
+    margin-top: -80px;
+    margin-left: 870px;
+    border: 1px solid white;
+    background-color:black;
+    border-radius: 5px;
+    color: whitesmoke;
+    padding: 40px 60px;
+    font-family: 'Roboto', sans-serif;
+}
 
