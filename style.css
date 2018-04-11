@@ -1,7 +1,90 @@
+/*css general*/
+html, body{
+	margin: 0;
+	padding: 0;
+}
+/*fonts*/
+@font-face{
+	font-family: Knewave;
+	font-weight: normal;
+	src: url('font/knewave.ttf');
+}
+/* partie de Zo */
+#logoandtitle{
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	height: 90px;
+}
+#logo{
+	background-image: url('images/logo-placeholder.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 10%;
+	height: 140px;
+	margin-left: 5%;
+}
+#sitename{
+	font-size: 60px;
+	font-family: Knewave;
+	margin: 20px 0px 0px 25%;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+#navbar{
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 40px;
+}
+#navbar a{
+	text-decoration: none;
+	margin-right: 50%;
+}
+#firstnavlink{
+	margin-left: 50%;
+}
+/* effect de music */
+.soundeffect{
+   background: orange;
+   bottom: 5px;
+   height: 5px;
+	 position: absolute;
+	 top: 16.5%;
+   width: 3px;
+   animation: sound 0ms -800ms linear infinite alternate;
+	 margin-left: 50%;
+}
+#musicffect{
+    height: 30px;
+    width: 50px;
+		left: 20px;
+}
+#firstbeats{
 
-
+}
+@keyframes sound {
+    0% {
+       opacity: .35;
+        height: 3px;
+    }
+    100% {
+        opacity: 1;
+        height: 28px;
+    }
+}
+.soundeffect:nth-child(1)  { left: 1px; animation-duration: 474ms; }
+.soundeffect:nth-child(2)  { left: 5px; animation-duration: 433ms; }
+.soundeffect:nth-child(3)  { left: 9px; animation-duration: 407ms; }
+.soundeffect:nth-child(4)  { left: 13px; animation-duration: 458ms; }
+.soundeffect:nth-child(5)  { left: 17px; animation-duration: 400ms; }
+.soundeffect:nth-child(6)  { left: 21px; animation-duration: 427ms; }
+.soundeffect:nth-child(7)  { left: 25px; animation-duration: 441ms; }
+/*.bar:nth-child(8)  { left: 29px; animation-duration: 419ms; }
+.bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
+.bar:nth-child(10) { left: 37px; animation-duration: 442ms; }*/
+/* partie de Tiff */
 dy {
-	background-color: ##636e72;
+	background-color: #636e72;
 }
 
 
@@ -99,4 +182,3 @@ span {
     padding: 40px 60px;
     font-family: 'Roboto', sans-serif;
 }
-
