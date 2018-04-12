@@ -182,3 +182,46 @@ span {
     padding: 40px 60px;
     font-family: 'Roboto', sans-serif;
 }
+
+
+/* Pop Up Festivals */
+
+.pic-container {
+  background-image: url('./images/qeq-img.png');
+  height: 360px;
+  width: 83%;
+  margin: 50px 50px 50px 50px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-text h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.center-text h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+}
+
+.artist-content {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.artist-content ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.artist-content li {
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+
