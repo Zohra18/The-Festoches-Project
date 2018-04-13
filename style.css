@@ -123,8 +123,19 @@ a{
 
 
 .rock-highlight{
-	background-color: rgba(231, 37, 10, 0.5);
+	background-color: rgba(230, 33, 108, 0.5);
+}
 
+.reggae-highlight{
+	background-color: rgba(0, 230, 230, 0.5);
+}
+
+.electro-highlight{
+	background-color: rgba(169, 255, 23, 0.5);
+}
+
+.rap-highlight{
+	background-color: rgba(230, 170, 26, 0.5);
 }
 
 .darkened{
