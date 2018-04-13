@@ -17,10 +17,36 @@ function carousel() {
 }
 
  $(document).ready(() => {
-   $('.rock-logo').hover(() => {
+   $('[class$=logo]').on('click', () => {
+     $('[class$="-highlight"]').removeClass('[class$="-highlight"]')
+     $('.darkened').removeClass('darkened')
+   })
+
+   $('.rock-logo').on('click', () => {
 
      $('.rock').toggleClass('rock-highlight')
 
-      $('not:(.rock)').toggleClass('darkened')
+      $('.col > ul> li:not(".rock")').toggleClass('darkened')
+   })
+
+   $('.reggae-logo').on('click', () => {
+
+     $('.reggae').toggleClass('reggae-highlight')
+
+      $('.col > ul> li:not(".reggae")').toggleClass('darkened')
+   })
+
+   $('.electro-logo').on('click', () => {
+
+     $('.electro').toggleClass('electro-highlight')
+
+      $('.col > ul> li:not(".electro")').toggleClass('darkened')
+   })
+
+   $('.rap-logo').on('click', () => {
+
+     $('.rap').toggleClass('rap-highlight')
+
+      $('.col > ul> li:not(".rap")').toggleClass('darkened')
    })
  })
