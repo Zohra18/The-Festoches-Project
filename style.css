@@ -3,6 +3,14 @@ html, body{
 	margin: 0;
 	padding: 0;
 }
+
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color : black;
+}
 /*fonts*/
 @font-face{
 	font-family: Knewave;
@@ -87,7 +95,11 @@ dy {
 	background-color: #636e72;
 }
 
-
+#fest-list{
+	display: flex;
+	justify-content: center;
+	margin-top: 30vh;
+}
 #popup {
 	position: fixed;
 	top: 0;
@@ -223,5 +235,3 @@ span {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
-
-
