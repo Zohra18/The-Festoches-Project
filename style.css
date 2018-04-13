@@ -106,6 +106,7 @@ a{
 	border-radius: 50%;
 }
 
+
 #fest-list{
 	display: flex;
 	justify-content: center;
@@ -146,99 +147,56 @@ a{
 
 
 
-#popup:target {
-  visibility: visible;
-  opacity: 1;
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    padding-bottom: 100px; /* Location of the box */
+    margin-bottom: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 80%;
-  position: relative;
-  transition: all 5s ease-in-out;
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 90%;
+    overflow: scroll;
 }
 
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #06D85F;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-
-
-
-=======
-/*SLIDER*/
-.mySlides {
-    display:none;
-    margin: 100px 0 0 200px;
-    height: 100vh;
-}
-
-.container {
-    position: relative;
-  }
-
-.im {
-    position: absolute;
-    margin-top: -700px;
-    margin-left: 500px;
-}
-
-span {
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 20px 0;
-    font-size: 45px;
-}
-
-.text {
-    color: white;
-    font-size: 17px;
-    position: absolute;
-    text-align: center;
-    margin-top: -80px;
-    margin-left: 870px;
-    border: 1px solid white;
-    background-color:black;
-    border-radius: 5px;
-    color: whitesmoke;
-    padding: 40px 60px;
-    font-family: 'Roboto', sans-serif;
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
-/* Pop Up Festivals */
 
-.pic-container {
-  background-image: url('./images/qeq-img.png');
-  height: 360px;
-  width: 83%;
-  margin: 50px 50px 50px 50px;
-}
 
-.center-text {
-  text-align: center;
+#fest-list{
+	display: flex;
+	justify-content: center;
+	margin-top: 30vh;
 }
 
 .center-text h2 {
