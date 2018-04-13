@@ -2,6 +2,7 @@
 html, body{
 	margin: 0;
 	padding: 0;
+	background-color: #636e72;
 }
 
 ul{
@@ -91,8 +92,18 @@ a{
 .bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
 .bar:nth-child(10) { left: 37px; animation-duration: 442ms; }*/
 /* partie de Tiff */
-dy {
-	background-color: #636e72;
+
+/*section2 fest-list*/
+
+
+#style-logo {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30vh;
+}
+
+#style-logo img{
+	border-radius: 50%;
 }
 
 #fest-list{
@@ -100,6 +111,27 @@ dy {
 	justify-content: center;
 	margin-top: 30vh;
 }
+
+#fest-list li{
+	margin: 5vh 3vw;
+}
+.col {
+ width: 20vw;
+ text-align: center;
+ line-height: 3;
+}
+
+
+.rock-highlight{
+	background-color: rgba(231, 37, 10, 0.5);
+
+}
+
+.darkened{
+	background-color: rgba(11, 7, 7, 0.91);
+}
+/* fin section 2 fest-list */
+
 #popup {
 	position: fixed;
 	top: 0;

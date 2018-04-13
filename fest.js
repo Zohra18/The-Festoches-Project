@@ -15,3 +15,12 @@ function carousel() {
     x[myIndex-1].style.display = "block";
     setTimeout(carousel, 5000); // Change image every 5 seconds
 }
+
+ $(document).ready(() => {
+   $('.rock-logo').hover(() => {
+
+     $('.rock').toggleClass('rock-highlight')
+
+      $('not:(.rock)').toggleClass('darkened')
+   })
+ })
