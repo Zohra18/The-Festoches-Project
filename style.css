@@ -143,16 +143,49 @@ a{
 }
 /* fin section 2 fest-list */
 
-#popup {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0, 0, 0, 0.7);
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
+/* POPUP de MATTHIEU <3 */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    padding-bottom: 100px; /* Location of the box */
+    margin-bottom: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 90%;
+    overflow: scroll;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -197,6 +230,72 @@ a{
 
 
 
+
+/*SLIDER*/
+.mySlides {
+    display:none;
+    margin: 100px 0 0 200px;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+  }
+
+.im {
+    position: absolute;
+    margin-top: -700px;
+    margin-left: 500px;
+}
+
+span {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 20px 0;
+    font-size: 45px;
+}
+
+.text {
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    text-align: center;
+    margin-top: -80px;
+    margin-left: 870px;
+    border: 1px solid white;
+    background-color:black;
+    border-radius: 5px;
+    color: whitesmoke;
+    padding: 40px 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*logo genre musical*/
+#genres {
+    display: flex;
+    margin: 50px;
+}
+
+.music1 {
+  background-color: #e6216c;
+  padding:30px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.music2 {
+  background-color: #00e6e6;
+  padding:30px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.music3 {
+  background-color: #a9ff17;
+  padding:30px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
 
 
 
