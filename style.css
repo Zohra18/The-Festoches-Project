@@ -143,7 +143,7 @@ a{
 }
 /* fin section 2 fest-list */
 
-/* POPUP de MATTHIEU <3 */
+/* POPUP de MATTHIEU qui pue grave du cul <3 */
 
 /* The Modal (background) */
 .modal {
@@ -189,9 +189,12 @@ a{
 }
 
 
-
-=======
 /*SLIDER*/
+.w3-section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mySlides {
     display:none;
     margin: 100px 0 0 200px;
