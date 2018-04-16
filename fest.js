@@ -19,6 +19,7 @@ function carousel() {
 //CODE NICO HIGHLIGHT
 
  $(document).ready(() => {
+
    $('[class$=logo]').on('click', () => {
      $('[class$="-highlight"]').removeClass('[class$="-highlight"]')
      $('.darkened').removeClass('darkened')
