@@ -52,7 +52,35 @@ function carousel() {
 
       $('.col > ul> li:not(".rap")').toggleClass('darkened')
    })
- })
+
+// effet test changement couleur glaces
+
+/*$(function () {
+      $(".logo").css("background-size","cover");
+    var logo = $('#logo');
+    var backgrounds = [
+      'url(images/logo1.png)',
+      'url(images/logo2.png)',
+      'url(images/logo4.png)',
+      'url(images/logo3.png)'];
+    var current = 0;
+
+    function nextBackground() {
+        logo.css(
+            'background',
+        backgrounds[current = ++current % backgrounds.length]);
+
+        setTimeout(nextBackground, 8000);
+    }
+    setTimeout(nextBackground, 8000);
+    logo.css('background', backgrounds[0]);
+
+});*/
+
+
+
+
+})//fin du document ready
 
 //CODE MATTHIEU POPUP
 
@@ -65,7 +93,7 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
 }
@@ -81,3 +109,34 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+// Effet de beats en dessous de la barre de nav
+
+var elem = $('.soundeffect');
+var count = elem.length;
+var setColor = function() {
+  elem.each(function(){
+    var $this = $(this);
+    var color = '#00e6e6';
+    $this.css({'background': color});
+  });
+};
+var loop = function(){
+
+  setTimeout(function(){
+    elem.each(function(){
+      var $this = $(this);
+      var height = (Math.random() * 30) + 1;
+      $this.css({
+        'bottom': height,
+        'height': height,
+        'width': '3px'
+      });
+    });
+    loop();
+  }, 400);
+
+}
+setColor();
+loop();
