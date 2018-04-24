@@ -21,7 +21,10 @@ function carousel() {
  $(document).ready(() => {
 
    $('[class$=logo]').on('click', () => {
-     $('[class$="-highlight"]').removeClass('[class$="-highlight"]')
+     $('[class$="-highlight"]').removeClass('rock-highlight')
+     $('[class$="-highlight"]').removeClass('reggae-highlight')
+     $('[class$="-highlight"]').removeClass('electro-highlight')
+     $('[class$="-highlight"]').removeClass('rap-highlight')
      $('.darkened').removeClass('darkened')
    })
 
@@ -31,7 +34,6 @@ function carousel() {
 
       $('.col > ul> li:not(".rock")').toggleClass('darkened')
    })
-
    $('.reggae-logo').on('click', () => {
 
      $('.reggae').toggleClass('reggae-highlight')
@@ -112,14 +114,21 @@ $(function () {
 // Get the modal
 var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+// Get the links that open the modal
+var links = Array.from(document.querySelectorAll(".fest-lien"));
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal
-btn.onclick = function() {
+// When the user clicks one of the links, open the modal and display no content but the one we selected
+links.forEach(x => x.addEventListener('click', openModal, false));
+
+function openModal() {
+	var divsContent = Array.from(document.querySelectorAll(".content"));
+	divsContent.forEach(x => x.style.display = "none");
+	var selectedContent = document.querySelector("#content-"+this.id);
+	selectedContent.style.display = "block";
+	console.log(selectedContent);
     modal.style.display = "block";
 }
 
