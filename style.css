@@ -68,9 +68,9 @@ a{
     width: 50px;
 		left: 20px;
 }
-/* #firstbeats{
+#firstbeats{
 
-} */
+}
 @keyframes sound {
     0% {
        opacity: .35;
@@ -102,9 +102,9 @@ a{
 	margin-top: 30vh;
 }
 
-/* #style-logo img{
+#style-logo img{
 
-} */
+}
 
 #fest-list{
 	display: flex;
@@ -143,75 +143,142 @@ a{
 }
 /* fin section 2 fest-list */
 
-#popup {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0, 0, 0, 0.7);
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
+/* POPUP de MATTHIEU qui pue grave du cul <3 */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    padding-bottom: 100px; /* Location of the box */
+    margin-bottom: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 90%;
+    overflow: scroll;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
-
-#popup:target {
-  visibility: visible;
-  opacity: 1;
+/*SLIDER*/
+.w3-section {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 80%;
-  position: relative;
-  transition: all 5s ease-in-out;
+.mySlides {
+    display:none;
+    margin: 100px 0 0 200px;
+    height: 100vh;
 }
 
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #06D85F;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
+.container {
+    position: relative;
+  }
+
+.im {
+    position: absolute;
+    margin-top: -700px;
+    margin-left: 500px;
 }
 
+span {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 20px 0;
+    font-size: 45px;
+}
 
+.text {
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    text-align: center;
+    margin-top: -80px;
+    margin-left: 870px;
+    border: 1px solid white;
+    background-color:black;
+    border-radius: 5px;
+    color: whitesmoke;
+    padding: 40px 60px;
+    font-family: 'Roboto', sans-serif;
+}
 
+/*logo genre musical*/
+#genres {
+    display: flex;
+    margin: 50px;
+}
 
+.music1 {
+  background-color: #e6216c;
+  padding:30px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
 
+.music2 {
+  background-color: #00e6e6;
+  padding:30px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
 
-/* Page Pop-Up Festivals */
+.music3 {
+  background-color: #a9ff17;
+  padding:30px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.music4 {
+  background-color: #e6aa1a;
+  padding:30px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+/* Pop Up Festivals */
 
 .pic-container {
-    background-image: url('./images/qeq-img.png');
-    height: 350px;
-    width: 950px;
-    margin-left: auto;
-    margin-right: auto;
+  background-image: url('./images/qeq-img.png');
+  height: 360px;
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .center-text {
-    text-align: center;
+  text-align: center;
 }
 
 .center-text h2 {
@@ -226,7 +293,7 @@ a{
 
 .artist-content {
   margin-top: 40px;
-  text-align: center;
+  margin-bottom: 50px;
 }
 
 .artist-content ul {
@@ -241,15 +308,148 @@ a{
   font-weight: 100;
 }
 
-.container-time {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+.content {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-.container-time ul {
-    display: flex;
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.background {
+  padding: 0 25px 25px;
+  position: relative;
+  width: 100%;
+  background-image: url('./images/acab.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media (min-width: 900px) {
+  .background {
+    padding: 0 0 25px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  max-width: 960px;
+  width: 100%;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 15px 25px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.pricing-table {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .pricing-table {
     flex-direction: row;
-    justify-content: space-around;
+  }
+}
+
+.pricing-table * {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #111212;
+  padding: 25px;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 900px) {
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #111212;
+    flex-basis: 100%;
+    padding: 25px 50px;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  width: 45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-header {
+  color: #111212;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  color: #111212;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 50px 0 25px;
+}
+
+.pricing-features-item {
+  border-top: 1px solid #111212;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #111212;
+}
+
+.pricing-price {
+  color: #111212;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #111212;
+  border-radius: 10px;
+  color: #111212;
+  display: inline-block;
+  margin: 25px 0;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #f19533;
+}
+
+.pricing-button.is-featured {
+  background-color: #111212;
+  color: #fff;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:active {
+  background-color: #111212;
 }
 
 
