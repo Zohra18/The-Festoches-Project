@@ -37,12 +37,12 @@ green : #a9ff16;
 
 /* HEADER */
 header{
-
+  height: 800px;
+  background: linear-gradient(#fff95b,/*#df68f9,*/#fc92c0, #fc92c0,#df68f9,black/*,#ffbfda*/);
 }
 
 /* gros bandeau de navigation*/
-#fatnavbar{
-	background: linear-gradient(#fff95b,/*#df68f9,*/#fc92c0/*,#ffbfda*/);
+/#fatnavbar{
 }
 /*logo et titre*/
 #logoandtitle{
@@ -171,9 +171,9 @@ header{
 
 #style-logo {
 	display: flex;
-	justify-content: space-around;
-  margin-bottom: 15vh;
-  margin-top: -100px;
+	justify-content: center;
+  padding-bottom: 2%;
+  padding-top: 6%;
 }
 
 .music1 {
