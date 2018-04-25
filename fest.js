@@ -52,7 +52,60 @@ function carousel() {
 
       $('.col > ul> li:not(".rap")').toggleClass('darkened')
    })
- })
+
+// effet test changement couleur glaces / beats
+
+
+
+
+
+$(function () {
+// variables logo glaces
+    var logo = $('.logo');
+    var backgrounds = [
+      'url(images/logo1.png)',
+      'url(images/logo2.png)',
+      'url(images/logo4.png)',
+      'url(images/logo3.png)'];
+    var current = 0;
+// loop des différents logo en fonction de l'index
+    function nextBackground(){
+        logo.css(
+            'background',
+        backgrounds[current = ++current % backgrounds.length]);
+// durée du roulement des images
+        setTimeout(nextBackground, 8000);
+        logo.css('background-size','cover');
+    }
+// logo initial
+    setTimeout(nextBackground, 8000);
+    logo.css('background-size','cover','background', backgrounds[0]);
+
+// meme chose pour les beats
+    var beats = $('.soundeffect');
+    var beatsColors = [
+      '#00e6e6',
+      '#a9ff16',
+      '#e7aa1b',
+      '#e6206d'];
+    var currentBeats = 0;
+// on met la couleur de l'index[i] en loop
+    function nextBeats() {
+        beats.css(
+            'background',
+        beatsColors[currentBeats = ++currentBeats % beatsColors.length]);
+// durée du roulement
+        setTimeout(nextBeats, 8000);
+    }
+// couleur beats initial
+    setTimeout(nextBeats, 8000);
+    beats.css('background', beatsColors[0]);
+});
+
+
+
+
+})//fin du document ready
 
 //CODE MATTHIEU POPUP
 
@@ -65,7 +118,7 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
 }
@@ -81,3 +134,35 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+// Effet de beats en dessous de la barre de nav
+
+var elem = $('.soundeffect');
+var count = elem.length;
+// met la couleur blue à chaque div soundeffect
+var setColor = function() {
+  elem.each(function(){
+    var $this = $(this);
+    var color = '#00e6e6';
+    $this.css({'background': color});
+  });
+};
+var loop = function(){
+// pour chaque div soundeffect fais un math.random pour la taille
+  setTimeout(function(){
+    elem.each(function(){
+      var $this = $(this);
+      var height = (Math.random() * 30) + 1;
+      $this.css({
+        'bottom': height,
+        'height': height,
+        'width': '3px'
+      });
+    }); // fais ce math.random en loop
+    loop();
+  }, 400);
+
+}
+setColor();
+loop();
