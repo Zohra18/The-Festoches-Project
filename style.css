@@ -31,11 +31,14 @@ a{
 /*couleur
 blue : #00e6e6;
 red-ish : #e6206d;
-orange : #e7aa1b;
+orange : ##e67612;
 green : #a9ff16;
 */
 
 /* HEADER */
+header{
+
+}
 
 /* gros bandeau de navigation*/
 #fatnavbar{
@@ -68,6 +71,7 @@ green : #a9ff16;
 	animation: Slipinice 3s infinite;
 	display: flex;
 	transition: 2s;
+	overflow: visible;
 }
 /* animatoin rotate*/
 @keyframes Slipinice{
@@ -124,7 +128,7 @@ green : #a9ff16;
 
 .mySlides {
     display:none;
-    margin: 0 0 0 200px;
+    margin: 0 0 0 5%;
     height: 100vh;
 }
 
@@ -132,10 +136,8 @@ green : #a9ff16;
     position: relative;
   }
 
-.im {
-    position: absolute;
-    margin-top: -700px;
-    margin-left: 500px;
+.container img{
+  width: 95%;
 }
 
 .date {
@@ -146,12 +148,13 @@ green : #a9ff16;
 }
 
 .text {
+		float: right;
     color: white;
     font-size: 17px;
     position: absolute;
     text-align: center;
-    margin-top: -200px;
-    margin-left: 870px;
+    margin-top: -30%;
+    margin-left: 85%;
     border: 1px solid white;
     background-color:black;
     border-radius: 5px;
@@ -195,7 +198,7 @@ margin-right: 50px;
 }
 
 .music4 {
-background-color: #e6aa1a;
+background-color: #e67612;
 padding:30px;
 border-radius: 50%;
 margin-right: 50px;
@@ -473,16 +476,14 @@ margin-right: 50px;
 
 
 /*partenaires*/
-.partenaires {
-  /* position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);*/
+.partenaire {
   margin-left: 0;
   margin-right: 0;
+  width: 100%;
 }
 
 .partenaire img {
-  width: 5%;
+  width: 8%;
   margin: 11px;
 }
 
