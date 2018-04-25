@@ -13,6 +13,7 @@
 <body>
 
   <header>
+    <div id="fatnavbar">
     <div id="logoandtitle">
       <div id="logo" class="logo"></div>
       <h1 id="sitename">SUMMER FESTIVAL</h1>
@@ -72,7 +73,7 @@
               <div class="soundeffect"></div>
             </div>
       </nav>
-
+</div>
 
     <!--SLIDER-->
     <div class="w3-section">
@@ -81,9 +82,7 @@
         <div class="container">
           <img src="images/slide1.jpg">
           <div class="overlay">
-            <div class="text">
-              <span>2017</span>
-              <br> Allemagne
+            <div class="text"><span class="date">2017</span><br> Allemagne
             </div>
           </div>
         </div>
@@ -93,9 +92,7 @@
       <div class="container">
         <img src="images/slide2.jpg">
         <div class="overlay">
-          <div class="text">
-            <span>2017</span>
-            <br> Paris
+          <div class="text"><span class="date">2017</span><br> Paris
           </div>
         </div>
       </div>
@@ -104,9 +101,7 @@
       <div class="container">
         <img src="images/slide3.png">
         <div class="overlay">
-          <div class="text">
-            <span>2017</span>
-            <br> Montreux
+          <div class="text"><span class="date">2017</span><br> Montreux
           </div>
         </div>
       </div>
@@ -115,9 +110,7 @@
       <div class="container">
         <img src="images/slide4.jpg">
         <div class="overlay">
-          <div class="text">
-            <span>2017</span>
-            <br> Italie
+          <div class="text"><span class="date">2017</span><br> Italie
           </div>
         </div>
       </div>
@@ -127,18 +120,10 @@
 
   <!--------------------logo genre musical-------------------->
   <div id="style-logo">
-    <div class="music1">
-      <img class="rock-logo" src="images/mus1.png" alt="rock-hand">
-    </div>
-    <div class="music2">
-      <img class="reggae-logo" src="images/mus2.png" alt="reaggae peace logo">
-    </div>
-    <div class="music3">
-      <img class="soul-logo" src="images/mus3.png" alt="">
-    </div>
-    <div class="music4">
-      <img class="electro-logo" src="images/mus4.png" alt="">
-    </div>
+    <div class="music1"><img class="rock-logo" src="images/mus1.png" alt="rock-hand"></div>
+    <div class="music2"><img class="electro-logo" src="images/mus2.png" alt=""></div>
+    <div class="music3"><img class="reggae-logo" src="images/mus3.png" alt="reaggae peace logo"></div>
+    <div class="music4"><img class="rap-logo" src="images/mus4.png" alt=""></div>
   </div>
 
   <!---------------------classement festivals------------>
@@ -146,71 +131,50 @@
     <div id="fest-list">
       <div id="col1" class="col">
         <ul>
-          <li class="rap rock">
-            <a href="">rap rock</a>
-          </li>
-          <li class="reggae rap rock">
-            <a href="">reggae rap rock</a>
-          </li>
-          <li class="rock electro">
-            <a href="">rock electro</a>
-          </li>
-          <li class="electro">
-            <a href="">electro</a>
-          </li>
-          <li class="reggae rap">
-            <a href="">reggae rap</a>
-          </li>
+          <h2>Mai</h2>
+          <li class="rap"><a href="">""</a></li>
+          <li class="reggae"><a href="">""</a></li>
+          <li class="rock"><a href="">""</a></li>
+          <li class="electro"><a href=""><span class="nameFest">Ideal Trouble</span><br>17 au 22</a></li>
+          <li class="reggae rap"><a href="">""</a></li>
         </ul>
       </div>
       <div id="col2" class="col">
         <ul>
-          <li class="reggae rap">
-            <a href="">reggae rap</a>
-          </li>
-          <li class="electro">
-            <a href="">electro</a>
-          </li>
-          <li class="reggae rap electro">
-            <a href="">reggae rap electro</a>
-          </li>
-          <li class="rock electro">
-            <a href="">rock electro</a>
-          </li>
-          <li class="reggae rap">
-            <a href="">reggae rap</a>
-          </li>
+          <h2>Juin</h2>
+          <li class="rap"><a href=""><span class="nameFest">Paris Hip-Hop Festival</span><br>02 au 10</a></li>
+          <li class="electro"><a href="">""</a></li>
+          <li class="reggae rap electro"><a href="">""</a></li>
+          <li class="rock electro"><a href="">""</a></li>
+          <li class="reggae rap"><a href="">""</a></li>
         </ul>
       </div>
       <div id="col3" class="col">
         <ul>
-          <li class="rap rock">
-            <a href="">rap rock</a>
-          </li>
-          <li class="rock electro">
-            <a href="">rock electro</a>
-          </li>
-          <li class="electro">
-            <a href="">electro</a>
-          </li>
-          <li class="reggae rap">
-            <a href="">reggae rap</a>
-          </li>
-          <li class="rap rock electro">
-            <a href="">rap rock electro</a>
-          </li>
+          <h2>Juillet</h2>
+          <li class="rap rock"><a href=""><span class="nameFest">Fuji Rock Festival</span><br>27 au 29</a></li>
+          <li class="rock electro"><a href="">""</a></li>
+          <li class="electro"><a href="">""</a></li>
+          <li class="reggae rap"><a href="">""</a></li>
+          <li class="rap rock electro"><a href="">""</a></li>
         </ul>
       </div>
+      <div id="col4" class="col">
+          <ul>
+            <h2>Aout</h2>
+            <li class="reggae"><a class="fest-lien" id="nomade"><span class="nameFest">Nomade Reggae Festival</span><br>03 au 05</a></li>
+            <li class="electro"><a class="fest-lien" id="qui"><span class="nameFest">Qui Embrouille Qui</span><br>09 au 11</a></li>
+            <li class="electro"><a href="">""</a></li>
+            <li class="reggae rap"><a href="">""</a></li>
+            <li class="rap rock electro"><a href="">""</a></li>
+          </ul>
+        </div>
     </div>
   </section2>
   <!------------------fin classement festivals------------->
 
   <!--------------------------pop-up---------------------->
   <section3>
-
-
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Open Modal</button>
 
 
     <!-- The Modal -->
@@ -222,6 +186,8 @@
         <p>
 
           <div class="content">
+          <div class="content" id="content-nomade">Contenu nomade</div>
+          <div class="content" id="content-qui">
 
 
             <div class="pic-container"></div>
@@ -310,6 +276,30 @@
       <div id="timeline"></div>
   </section3>
   <!---------------------fin du pop-up---------------------->
+
+  <!--partenaires-->
+  <div class="partenaires">
+      <div class="partenaire">
+          <a href="http://www.superbock.pt/global/fr/products/" target="blank"><img src="images/Super.png" alt=""></a>
+          <a href="https://www.cocacola.fr" target="blank"><img src="images/Coca.png" alt=""></a>
+          <a href="https://www.haribo.com/frFR/accueil.html" target="blank"><img src="images/Haribo.png" alt=""></a>
+          <a href="http://energydrink-fr.redbull.com/?syn=MARQUE&gclid=CjwKCAjwk9HWBRApEiwA6mKWaWrwhm9dbHliM0eCrwlxBzKU_I2CeqveAJa4MaN9wS6RIzCOwpCJkBoCztcQAvD_BwE" target="blank"><img src="images/Red.png" alt=""></a>
+          <a href="https://becks.de" target="blank"><img src="images/Beck_s.png" alt=""></a>
+          <a href="https://www.6play.fr/m6" target="blank"><img src="images/M6.png" alt=""></a>
+          <a href="https://www.6play.fr/w9" target="blank"><img src="images/W9.png" alt=""></a>
+          <a href="https://www.lesinrocks.com/#" target="blank"><img src="images/Inrocks.jpeg" alt=""></a>
+          <a href="https://www.airbnb.fr/a/?af=43720035&c=.pi0.pk4063331735_192900875462_c_12026460346&gclid=Cj0KCQjwn-bWBRDGARIsAPS1svtGDha1HIe0klsyuE_7bhOkXvTSMmDn-COuvkBpO6wp2X0Y_tdwIdcaArQCEALw_wcB"><img src="images/airbnb.png" alt=""></a>
+          <a href="http://www.fnacspectacles.com" target="blank"><img src="images/fnac.png" alt=""></a>
+          <a href="https://www.orangebank.fr" target="blank"><img src="images/orange.png" alt=""></a>
+          <a href="https://www.ge.com/fr/"><img src="images/GE.png" alt=""></a>
+          <a href="https://www.deezer.com/fr/offers?utm_source=google&utm_campaign=acq-sea_brand_test&utm_medium=search-obj_sub&utm_content=offers&gclid=CjwKCAjwk9HWBRApEiwA6mKWaRVyquwyoZjBi8w8IZZC_oU6F7L3M03D_WfocnABF82hBps2IATmCBoCvtEQAvD_BwE" target="blank"><img src="images/deezer.png" alt=""></a>
+          <a href="https://www.zojirushi.co.jp/cafe/spot/event/fujirock/" target="blank"><img src="images/zojiruchi.png" alt=""></a>
+      </div>
+
+
+
+
+
 
 
   <footer>

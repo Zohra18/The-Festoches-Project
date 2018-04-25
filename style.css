@@ -37,6 +37,10 @@ green : #a9ff16;
 
 /* HEADER */
 
+/* gros bandeau de navigation*/
+#fatnavbar{
+	background: linear-gradient(#fff95b,/*#df68f9,*/#fc92c0/*,#ffbfda*/);
+}
 /*logo et titre*/
 #logoandtitle{
 	display: flex;
@@ -44,7 +48,7 @@ green : #a9ff16;
 	width: 100%;
 	height: 90px;
 	text-align: center;
-	background-color: black;
+	background-color: transparent;
 }
 #sitename{
 	font-size: 80px;
@@ -82,7 +86,7 @@ green : #a9ff16;
 	display: flex;
 	justify-content: center;
 	padding-top: 14px;
-	background-color: black;
+	background-color: transparent;
 }
 #navbar a{
 	text-decoration: none;
@@ -90,6 +94,7 @@ green : #a9ff16;
 	font-size: 26px;
 	font-family: Directors;
 	color: #dddddd;
+	text-shadow: 2px 2px 4px black;
 }
 /* effect de music */
 .soundeffect{
@@ -108,33 +113,107 @@ green : #a9ff16;
 		justify-content: center;
 		height: 50px;
 		padding-right: 10px;
-		background-color: black;
+		background-color: transparent;
 }
 
+/*SLIDER*/
+.w3-section {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-/*section2 fest-list*/
+.mySlides {
+    display:none;
+    margin: 0 0 0 200px;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+  }
+
+.im {
+    position: absolute;
+    margin-top: -700px;
+    margin-left: 500px;
+}
+
+.date {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 20px 0;
+    font-size: 45px;
+}
+
+.text {
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    text-align: center;
+    margin-top: -200px;
+    margin-left: 870px;
+    border: 1px solid white;
+    background-color:black;
+    border-radius: 5px;
+    color: whitesmoke;
+    padding: 20px 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*logo genre musical*/
+/* #genres {
+  display: flex;
+  margin: 50px;
+} */
+
 #style-logo {
 	display: flex;
 	justify-content: space-around;
-	margin-top: 30vh;
+  margin-bottom: 15vh;
+  margin-top: -100px;
 }
 
-#style-logo img{
+.music1 {
+background-color: #e6216c;
+padding:30px;
+border-radius: 50%;
+margin-right: 50px;
+}
 
+.music2 {
+background-color: #00e6e6;
+padding:30px;
+border-radius: 50%;
+margin-right: 50px;
+}
+
+.music3 {
+background-color: #a9ff17;
+padding:30px;
+border-radius: 50%;
+margin-right: 50px;
+}
+
+.music4 {
+background-color: #e6aa1a;
+padding:30px;
+border-radius: 50%;
+margin-right: 50px;
 }
 
 /* planning festival par mois*/
 #fest-list{
 	display: flex;
 	justify-content: center;
-	margin-top: 30vh;
+  /* margin-top: 30vh; */
+  text-align: center;
+  background-color: #f7fdfd;
 }
 
 #fest-list li{
 	margin: 5vh 3vw;
 }
 .col {
- width: 20vw;
  text-align: center;
  line-height: 3;
 }
@@ -144,11 +223,11 @@ green : #a9ff16;
 	background-color: rgba(230, 33, 108, 0.5);
 }
 
-.reggae-highlight{
+.electro-highlight{
 	background-color: rgba(0, 230, 230, 0.5);
 }
 
-.electro-highlight{
+.reggae-highlight{
 	background-color: rgba(169, 255, 23, 0.5);
 }
 
@@ -204,85 +283,6 @@ green : #a9ff16;
     color: #000;
     text-decoration: none;
     cursor: pointer;
-}
-
-
-/*SLIDER*/
-.w3-section {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mySlides {
-    display:none;
-    margin: 100px 0 0 200px;
-    height: 100vh;
-}
-
-.container {
-    position: relative;
-  }
-
-.im {
-    position: absolute;
-    margin-top: -700px;
-    margin-left: 500px;
-}
-
-span {
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 20px 0;
-    font-size: 45px;
-}
-
-.text {
-    color: white;
-    font-size: 17px;
-    position: absolute;
-    text-align: center;
-    margin-top: -80px;
-    margin-left: 870px;
-    border: 1px solid white;
-    background-color:black;
-    border-radius: 5px;
-    color: whitesmoke;
-    padding: 40px 60px;
-    font-family: 'Roboto', sans-serif;
-}
-
-/*logo genre musical*/
-#genres {
-    display: flex;
-    margin: 50px;
-}
-
-.music1 {
-  background-color: #e6216c;
-  padding:30px;
-  border-radius: 50%;
-  margin-right: 50px;
-}
-
-.music2 {
-  background-color: #00e6e6;
-  padding:30px;
-  border-radius: 50%;
-  margin-right: 50px;
-}
-
-.music3 {
-  background-color: #a9ff17;
-  padding:30px;
-  border-radius: 50%;
-  margin-right: 50px;
-}
-
-.music4 {
-  background-color: #e6aa1a;
-  padding:30px;
-  border-radius: 50%;
-  margin-right: 50px;
 }
 
 /* Pop Up Festivals */
@@ -471,3 +471,22 @@ span {
 }
 
 
+
+/*partenaires*/
+.partenaires {
+  /* position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);*/
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.partenaire img {
+  width: 5%;
+  margin: 11px;
+}
+
+.partenaire {
+  text-align: center;
+  position: absolute;
+}
