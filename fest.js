@@ -88,7 +88,7 @@ $(function () {
     var beatsColors = [
       '#00e6e6',
       '#a9ff16',
-      '#e7aa1b',
+      '#e67612',
       '#e6206d'];
     var currentBeats = 0;
 // on met la couleur de l'index[i] en loop

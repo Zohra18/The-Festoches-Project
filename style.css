@@ -37,6 +37,10 @@ green : #a9ff16;
 
 /* HEADER */
 
+/* gros bandeau de navigation*/
+#fatnavbar{
+	background: linear-gradient(#fff95b,/*#df68f9,*/#fc92c0/*,#ffbfda*/);
+}
 /*logo et titre*/
 #logoandtitle{
 	display: flex;
@@ -44,7 +48,7 @@ green : #a9ff16;
 	width: 100%;
 	height: 90px;
 	text-align: center;
-	background-color: black;
+	background-color: transparent;
 }
 #sitename{
 	font-size: 80px;
@@ -82,7 +86,7 @@ green : #a9ff16;
 	display: flex;
 	justify-content: center;
 	padding-top: 14px;
-	background-color: black;
+	background-color: transparent;
 }
 #navbar a{
 	text-decoration: none;
@@ -90,6 +94,7 @@ green : #a9ff16;
 	font-size: 26px;
 	font-family: Directors;
 	color: #dddddd;
+	text-shadow: 2px 2px 4px black;
 }
 /* effect de music */
 .soundeffect{
@@ -108,7 +113,7 @@ green : #a9ff16;
 		justify-content: center;
 		height: 50px;
 		padding-right: 10px;
-		background-color: black;
+		background-color: transparent;
 }
 
 /*SLIDER*/
@@ -119,7 +124,7 @@ green : #a9ff16;
 
 .mySlides {
     display:none;
-    margin: 100px 0 0 200px;
+    margin: 0 0 0 200px;
     height: 100vh;
 }
 
@@ -145,13 +150,13 @@ green : #a9ff16;
     font-size: 17px;
     position: absolute;
     text-align: center;
-    margin-top: -80px;
+    margin-top: -200px;
     margin-left: 870px;
     border: 1px solid white;
     background-color:black;
     border-radius: 5px;
     color: whitesmoke;
-    padding: 40px 60px;
+    padding: 20px 40px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -324,7 +329,7 @@ margin-right: 50px;
 /*partenaires*/
 .partenaires {
   /* position: absolute;
-  top: 50%; left: 50%; 
+  top: 50%; left: 50%;
   transform: translate(-50%, -50%);*/
   margin-left: 0;
   margin-right: 0;
