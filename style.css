@@ -352,12 +352,6 @@ margin-right: 50px;
   background-size: cover;
 }
 
-/*SLIDER*/
-.mySlides {
-    display:none;
-    margin: 100px 0 0 200px;
-    height: 100vh;
-}
 
 
 @media (min-width: 900px) {
@@ -407,10 +401,6 @@ margin-right: 50px;
 .pricing-plan:last-child {
   border-bottom: none;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> c9e9d0aeeae3c775c3056b0cc3eafd9593977ac8
 
 @media (min-width: 900px) {
   .pricing-plan {
