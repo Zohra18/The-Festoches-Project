@@ -31,12 +31,14 @@ a{
 /*couleur
 blue : #00e6e6;
 red-ish : #e6206d;
-orange : #e7aa1b;
+orange : ##e67612;
 green : #a9ff16;
 */
 
 /* HEADER */
+header{
 
+}
 
 /* gros bandeau de navigation*/
 #fatnavbar{
@@ -196,7 +198,7 @@ margin-right: 50px;
 }
 
 .music4 {
-background-color: #e6aa1a;
+background-color: #e67612;
 padding:30px;
 border-radius: 50%;
 margin-right: 50px;
