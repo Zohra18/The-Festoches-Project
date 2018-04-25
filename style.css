@@ -97,7 +97,7 @@ header{
 	margin-right: 20%;
 	font-size: 26px;
 	font-family: Directors;
-	color: #dddddd;
+	color: white;
 	text-shadow: 2px 2px 4px black;
 }
 /* effect de music */
@@ -205,20 +205,35 @@ margin-right: 50px;
 }
 
 /* planning festival par mois*/
-#fest-list{
+#fest-list {
 	display: flex;
 	justify-content: center;
-  /* margin-top: 30vh; */
   text-align: center;
   background-color: #f7fdfd;
+
 }
 
-#fest-list li{
+#fest-list li {
 	margin: 5vh 3vw;
 }
+
 .col {
  text-align: center;
  line-height: 3;
+}
+
+h2 {
+  font-family: Knewave;
+  text-transform: uppercase;
+}
+
+.nameFest {
+  font-weight: 900;
+}
+
+hr {
+  margin-top: -20px;
+  margin-bottom: -20px;
 }
 
 /* highlight des onclicks par catégorie */
@@ -239,7 +254,7 @@ margin-right: 50px;
 }
 /* darkened zones */
 .darkened{
-	background-color: rgba(11, 7, 7, 0.91);
+	color: rgba(11, 7, 7, 0.91);
 }
 /* fin section 2 fest-list */
 
@@ -481,6 +496,10 @@ margin-right: 50px;
 
 
 /*partenaires*/
+.partenaires {
+  margin-top: 50px;
+}
+
 .partenaire {
   margin-left: 0;
   margin-right: 0;
