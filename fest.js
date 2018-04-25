@@ -18,7 +18,9 @@ function carousel() {
 
  $(document).ready(() => {
 
-   $('[class$=logo]').on('click', () => {
+
+
+   $('[class^=music]').on('click', () => {
      $('[class$="-highlight"]').removeClass('rock-highlight')
      $('[class$="-highlight"]').removeClass('reggae-highlight')
      $('[class$="-highlight"]').removeClass('electro-highlight')
@@ -26,30 +28,20 @@ function carousel() {
      $('.darkened').removeClass('darkened')
    })
 
-   $('.rock-logo').on('click', () => {
-
+   $('.music1').on('click', () => {
      $('.rock').toggleClass('rock-highlight')
-
       $('.col > ul> li:not(".rock")').toggleClass('darkened')
    })
-   $('.reggae-logo').on('click', () => {
-
-     $('.reggae').toggleClass('reggae-highlight')
-
-      $('.col > ul> li:not(".reggae")').toggleClass('darkened')
-   })
-
-   $('.electro-logo').on('click', () => {
-
+   $('.music2').on('click', () => {
      $('.electro').toggleClass('electro-highlight')
-
       $('.col > ul> li:not(".electro")').toggleClass('darkened')
    })
-
-   $('.rap-logo').on('click', () => {
-
+   $('.music3').on('click', () => {
+     $('.reggae').toggleClass('reggae-highlight')
+      $('.col > ul> li:not(".reggae")').toggleClass('darkened')
+   })
+   $('.music4').on('click', () => {
      $('.rap').toggleClass('rap-highlight')
-
       $('.col > ul> li:not(".rap")').toggleClass('darkened')
    })
 
