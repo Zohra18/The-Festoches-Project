@@ -37,6 +37,7 @@ green : #a9ff16;
 
 /* HEADER */
 
+
 /* gros bandeau de navigation*/
 #fatnavbar{
 	background: linear-gradient(#fff95b,/*#df68f9,*/#fc92c0/*,#ffbfda*/);
@@ -124,7 +125,7 @@ green : #a9ff16;
 
 .mySlides {
     display:none;
-    margin: 0 0 0 200px;
+    margin: 0 0 0 5%;
     height: 100vh;
 }
 
@@ -132,10 +133,8 @@ green : #a9ff16;
     position: relative;
   }
 
-.im {
-    position: absolute;
-    margin-top: -700px;
-    margin-left: 500px;
+.container img{
+  width: 95%;
 }
 
 .date {
