@@ -69,6 +69,7 @@ green : #a9ff16;
 	animation: Slipinice 3s infinite;
 	display: flex;
 	transition: 2s;
+	overflow: visible;
 }
 /* animatoin rotate*/
 @keyframes Slipinice{
@@ -145,12 +146,13 @@ green : #a9ff16;
 }
 
 .text {
+		float: right;
     color: white;
     font-size: 17px;
     position: absolute;
     text-align: center;
-    margin-top: -200px;
-    margin-left: 870px;
+    margin-top: -30%;
+    margin-left: 85%;
     border: 1px solid white;
     background-color:black;
     border-radius: 5px;
