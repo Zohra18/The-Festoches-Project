@@ -312,6 +312,22 @@ hr {
   margin-left: auto;
   margin-right: auto;
 }
+.pic-container-rock-seine {
+  background-image: url('./images/rock-seine.jpg');
+	background-size: cover;
+  height: 360px;
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pic-container-francofolies {
+  background-image: url('./images/francofolies.jpg');
+	background-size: cover;
+  height: 360px;
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #popup:target {
   visibility: visible;
