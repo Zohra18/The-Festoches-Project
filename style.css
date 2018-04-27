@@ -319,7 +319,7 @@ hr {
   background-image: url('./images/rock-seine.jpg');
 	background-size: cover;
   height: 360px;
-  width: 83%;
+  width: 45%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -378,10 +378,28 @@ hr {
 }
 
 .background {
-  padding: 0 25px 25px;
+	padding: 0 25px 25px;
   position: relative;
   width: 100%;
   background-image: url('./images/acab.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-rock-seine {
+	padding: 0 25px 25px;
+  position: relative;
+  width: 100%;
+  background-image: url('./images/rock-seine-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-francofolies {
+	padding: 0 25px 25px;
+  position: relative;
+  width: 100%;
+  background-image: url('./images/francofolies-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
