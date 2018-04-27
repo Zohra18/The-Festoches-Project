@@ -241,7 +241,9 @@ margin-right: 50px;
 .col ul{
 	padding: 0;
 }
-
+.col li{
+	font-family: Roboto;
+}
 #col1{
  background: linear-gradient(-45deg,#edafe3,#9acdf4);
 
