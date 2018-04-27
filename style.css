@@ -2,7 +2,8 @@
 html, body{
 	margin: 0;
 	padding: 0;
-	background-color: white/*#636e72*/;
+	background: linear-gradient(#fff95b,/*#df68f9,*/#fc92c0, #fc92c0,#df68f9,black/*,#ffbfda*/);
+	background-attachment: fixed;
 }
 
 ul{
@@ -38,12 +39,9 @@ green : #a9ff16;
 /* HEADER */
 header{
   height: 800px;
-  background: linear-gradient(#fff95b,/*#df68f9,*/#fc92c0, #fc92c0,#df68f9,black/*,#ffbfda*/);
+	padding-bottom: 10%;
 }
 
-/* gros bandeau de navigation*/
-/#fatnavbar{
-}
 /*logo et titre*/
 #logoandtitle{
 	display: flex;
@@ -173,7 +171,12 @@ header{
 	display: flex;
 	justify-content: center;
   padding-bottom: 2%;
-  padding-top: 20%;
+  padding-top: 8%;
+	background: black;
+}
+
+.col{
+	background: white
 }
 
 .music1 {
@@ -209,8 +212,8 @@ margin-right: 50px;
 	display: flex;
 	justify-content: center;
   text-align: center;
-  background-color: #f7fdfd;
-
+  background-color: black;
+	padding-bottom: 4%;
 }
 
 #fest-list li {
